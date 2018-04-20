@@ -1,0 +1,23 @@
+<!--pages/search/search.wxml-->
+<view class="top">
+  <view class="contain">
+    <image src="../../images/home.png"></image>
+    <input class="search_con" placeholder='请输入产品信息'></input>
+    <image src="../../images/search.png" bindtap="searchClick"></image>
+  </view>
+</view>
+<view class="ans" wx:if="{{status}}" >
+  <view class="tiaojian">
+      <view class="tjtb">默认</view>
+      <view class="tjtb">销量</view>
+      <view class="tjtb">价格</view>
+      <view class="tjtb">评价</view>
+
+      <view class="nogoods">
+      抱歉，未找到符合条件的商品
+      </view>
+      <view class="hasgoods">
+      1111
+      </view>
+  </view>
+</view>    

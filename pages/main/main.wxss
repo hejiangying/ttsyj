@@ -1,0 +1,26 @@
+
+.slh{overflow: hidden;white-space: nowrap;text-overflow: ellipsis;}
+.search{width: 90%;height: 60rpx;margin: 0 auto;border-bottom: 1rpx solid #e3e3e3;}
+.search .sea image{width: 36rpx;height: 36rpx;display: inline-block;vertical-align: middle;margin-right:10rpx;}
+.search .sea text{color:#9c9c9c;font-size:28rpx; }
+swiper-item{margin-top: 10rpx;}
+swiper-item image{width: 100%;height: 330rpx;}
+.goods{width: 100%;overflow: hidden;background: #f5f5f5;padding: 0rpx 10rpx;box-sizing: border-box;padding-bottom: 10rpx;}
+.goods .goods_card{width: 32%;height: 344rpx;margin-right: 2%;float: left;position: relative;overflow: hidden;margin-top: 10rpx;background: #fff;}
+.goods .goods_card:nth-child(3n){margin-right: 0rpx;}
+.goods .goods_card text{font-size: 28rpx;width: 90%;margin: 0 auto;display: block;}
+.goods .goods_card:nth-child(1) text,.goods .goods_card:nth-child(5) text{color: #6394e3}
+.goods .goods_card:nth-child(2) text,.goods .goods_card:nth-child(6) text{color: #d24b48;}
+.goods .goods_card:nth-child(3) text,.goods .goods_card:nth-child(4) text{color: #9bc45e;}
+.goods .goods_card image{width: 100%;height: 228rpx;}
+.goods .price{position: absolute;background: red;height: 10%;width: 90%;right:-23%;bottom: 20rpx;transform: rotate(-45deg);}
+.goods .goods_card:nth-child(1) .price,.goods .goods_card:nth-child(5) .price{background: #6394e3;opacity: 0.7; }
+.goods .goods_card:nth-child(2) .price,.goods .goods_card:nth-child(6) .price{background: #d24b48;opacity: 0.7; }
+.goods .goods_card:nth-child(3) .price,.goods .goods_card:nth-child(4) .price{background: #9bc45e;opacity: 0.7; }
+.goods .price .price_num{font-size: 24rpx;text-align: center;color: #fff;}
+.goods_tiao{background: #fff;width: 100%;}
+.goods_tiao .goods_tt{height: 234rpx;border-bottom:1rpx solid #f2f2f2;display: block}
+.goods_tiao .goods_tt image{width: 210rpx;height: 210rpx;display: inline-block;float:left;margin: 11rpx;box-sizing: border-box;}
+.goods_tiao .goods_tt .goods_t-r{display: inline-block;float: left;width: 66%;border: 1px solid transparent;margin-top: 20rpx;}
+.goods_tiao .goods_tt .goods_name{font-size: 28rpx;}
+.goods_tiao .goods_tt .goods_price{font-size: 32rpx;color: #fe4900;display: block;margin-top: 20rpx;}

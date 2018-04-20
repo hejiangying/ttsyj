@@ -1,0 +1,57 @@
+<!--pages/sort/sort.wxml-->
+<view class="sort_con">
+<view class="sort_menu">
+  <view class="on">食品饮料</view>
+  <view>食品饮料</view>
+  <view>食品饮料</view>
+  <view>食品饮料</view>
+  <view>食品饮料</view>
+  <view>食品饮料</view>
+  <view>食品饮料</view>
+
+</view>
+<view class="sort_right">
+    <view class="sort_item">
+      <text>休闲零食</text>
+      <view class="sort_eve">
+        <view class="dbt">
+          <image src="../../images/dbt.png"></image>
+          <text>坚果</text>
+        </view>
+        <view class="dbt">
+          <image src="../../images/dbt.png"></image>
+          <text>坚果</text>
+        </view>
+        <view class="dbt">
+          <image src="../../images/dbt.png"></image>
+          <text>坚果</text>
+        </view>
+        <view class="dbt">
+          <image src="../../images/dbt.png"></image>
+          <text>坚果</text>
+        </view>
+      </view>
+  </view>
+  <view class="sort_item">
+      <text>休闲零食</text>
+      <view class="sort_eve">
+        <view class="dbt">
+          <image src="../../images/dbt.png"></image>
+          <text>坚果</text>
+        </view>
+        <view class="dbt">
+          <image src="../../images/dbt.png"></image>
+          <text>坚果</text>
+        </view>
+        <view class="dbt">
+          <image src="../../images/dbt.png"></image>
+          <text>坚果</text>
+        </view>
+        <view class="dbt">
+          <image src="../../images/dbt.png"></image>
+          <text>坚果</text>
+        </view>
+      </view>
+  </view>
+</view>
+</view>

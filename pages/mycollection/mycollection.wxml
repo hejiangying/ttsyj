@@ -1,0 +1,21 @@
+<!--pages/mycollection/mycollection.wxml-->
+<view class="carts">
+  <view class="cart">
+    <image src="../../images/de.png"></image>
+    <view class="cartname">Dior/迪奥香水明星Q版5件套装 真我花漾粉魅永恒的爱迪奥之韵礼盒 </view>
+    <view class="cartprice">￥367.00</view>
+    <view class="del">删除收藏</view>
+  </view>
+  <view class="cart">
+    <image src="../../images/de.png"></image>
+    <view class="cartname">Dior/迪奥香水明星Q版5件套装 真我花漾粉魅永恒的爱迪奥之韵礼盒 </view>
+    <view class="cartprice">￥367.00</view>
+    <view class="del">删除收藏</view>
+  </view>
+  <view class="cart">
+    <image src="../../images/de.png"></image>
+    <view class="cartname">Dior/迪奥香水明星Q版5件套装 真我花漾粉魅永恒的爱迪奥之韵礼盒 </view>
+    <view class="cartprice">￥367.00</view>
+    <view class="del">删除收藏</view>
+  </view>
+</view>

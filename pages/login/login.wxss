@@ -1,0 +1,29 @@
+/* pages/login/login.wxss */
+.cen{border-bottom: 1rpx solid #e2e2e2;}
+.cen .tab{font-size: 28rpx;width: 50%;height: 88rpx;display: inline-block;text-align: center;line-height: 100rpx;}
+.cen text{height: 84rpx;display: block;width: 120rpx;margin: 0 auto;}
+.cen text.on{color: #ff6700;border-bottom: 4rpx solid #ff6700;}
+.sub .sub_item image{width: 40rpx;height: 40rpx; display: inline-block;vertical-align: top;}
+.sub .phonenum image{width: 34rpx;}
+.sub .sub_item {width: 90%;margin: 0 auto;border-bottom: 1rpx solid #e2e2e2;height: 40rpx;padding: 24rpx 0rpx; }
+.sub .sub_item input{display: inline-block;margin-left: 10rpx;width: 90%;font-size: 28rpx;height
+:40rpx;line-height: 40rpx;margin-top: -5rpx;}
+.sub .yzm{border-bottom: none;}
+.sub .yzm input{width: 60%;}
+.sub .yzm text{font-size: 28rpx;display: inline-block;vertical-align: top;}
+.sub{padding-top: 20rpx;background: #eee;}
+.sub_con{background: #fff;}
+.info{background: #eee;}
+.contain{width: 92%;margin: 0 auto;padding-bottom: 400rpx;}
+.contain text{font-size: 28rpx;width: 100%;}
+.contain text.yh{color: #0a89c7;}
+.contain button{width: 100%;height: 80rpx;margin-top: 10rpx;border-radius: 10rpx;color: #fff;text-align: center;font-size: 28rpx;border: none;}
+.contain button.log{background: #c2c2c2;margin-top: 30rpx;}
+.contain button.findmm{background: #9bc45e;margin-bottom: 20rpx;}
+.dsf{position: relative;margin-top: 70rpx;}
+.dsf .h{width: 70%;height: 1rpx;background: #ccc;margin: 0 auto;}
+.dsf text{width: 300rpx;margin: 0 auto;display: block;color: #666;background: #dcdcdc;text-align: center;position: absolute;left: 0;right: 0;bottom: -20rpx;}
+.share{width:200rpx;margin:0 auto;margin-top: 40rpx; }
+.share view{width: 36rpx;height: 36rpx;float: left;margin-right: 40rpx;}
+.share view:last-child{margin-right: 0rpx;}
+.share view image{width: 36rpx;height: 36rpx;}

@@ -1,0 +1,59 @@
+<!--pages/but_goumai/but_goumai.wxml-->
+<view class="but_g">
+  <view class="goodsnum">
+    <image src="../../images/goods.jpg"></image>
+    <view class="goodsinfo">
+      <text class="slh">Dior/迪奥香水明星Q版5件套...</text>
+      <text class="yhj">优惠价：￥367.00</text>
+      <view class="num">
+        <text class="del">-</text>
+        <input value="1"></input>
+        <text class="add">+</text>
+      </view>
+    </view>
+    <view class="operation">
+      <image src="../../images/selected.png" class="dele"></image>
+      <image src="../../images/delete.png"></image>
+    </view>
+  </view>
+  <view class="goodsnum">
+    <image src="../../images/goods.jpg"></image>
+    <view class="goodsinfo">
+      <text class="slh">Dior/迪奥香水明星Q版5件套...</text>
+      <text class="yhj">优惠价：￥367.00</text>
+      <view class="num">
+        <text class="del">-</text>
+        <input value="1"></input>
+        <text class="add">+</text>
+      </view>
+    </view>
+    <view class="operation">
+      <image src="../../images/selected.png" class="dele"></image>
+      <image src="../../images/delete.png"></image>
+    </view>
+  </view>
+  <view class="goodsnum">
+    <image src="../../images/goods.jpg"></image>
+    <view class="goodsinfo">
+      <text class="slh">Dior/迪奥香水明星Q版5件套...</text>
+      <text class="yhj">优惠价：￥367.00</text>
+      <view class="num">
+        <text class="del">-</text>
+        <input value="1"></input>
+        <text class="add">+</text>
+      </view>
+    </view>
+    <view class="operation">
+      <image src="../../images/selected.png" class="dele"></image>
+      <image src="../../images/delete.png"></image>
+    </view>
+  </view>
+</view>
+<view class="foot">
+  <view>
+    <text>金额</text>
+    <text>￥0.00</text>
+  </view>
+  <view bindtap='contiShop'>继续购物</view>
+  <view>去结算</view>
+</view>

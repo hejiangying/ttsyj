@@ -1,0 +1,50 @@
+<!--pages/mycoupons/mycoupons.wxml-->
+<view class="yhq_tab">
+<view class="yhq_use" bindtap='yhqClick' data-type="1">可用优惠券（3）</view>
+<view class="yhq_no" bindtap='yhqClick' data-type="2">不可用优惠券（0）</view>
+</view>
+<view class="yhq" wx:if="{{_type==1}}">
+  <view class="yhqdetail">
+    <view class="yhq_l">
+      <text class="yhq_name">哈哈哈</text>
+      <text class="yhq_num">￥500.00</text>
+      <text class="yhq_sum">订单满800使用</text>
+    </view>
+    <view class="yhq_r">
+      <text class="yhq_lname">副券</text>
+      <text class="begintime">2018-04-08</text>
+      <text class="endtime">2018-04-30</text>
+    </view>
+  </view>
+
+  <view class="yhqdetail">
+    <view class="yhq_l">
+      <text class="yhq_name">哈哈哈</text>
+      <text class="yhq_num">￥500.00</text>
+      <text class="yhq_sum">订单满800使用</text>
+    </view>
+    <view class="yhq_r">
+      <text class="yhq_lname">副券</text>
+      <text class="begintime">2018-04-08</text>
+      <text class="endtime">2018-04-30</text>
+    </view>
+  </view>
+
+  <view class="yhqdetail">
+    <view class="yhq_l">
+      <text class="yhq_name">哈哈哈</text>
+      <text class="yhq_num">￥500.00</text>
+      <text class="yhq_sum">订单满800使用</text>
+    </view>
+    <view class="yhq_r">
+      <text class="yhq_lname">副券</text>
+      <text class="begintime">2018-04-08</text>
+      <text class="endtime">2018-04-30</text>
+    </view>
+  </view>
+
+</view>
+
+<view class="no_yhq" wx:else>
+  222
+</view>

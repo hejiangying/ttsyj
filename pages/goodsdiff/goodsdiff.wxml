@@ -1,0 +1,87 @@
+<!--pages/goodsdetail/goodsdetail.wxml-->
+<view>
+  <swiper autoplay='{{autoplay}}' interval='{{interval}}' duration="{{duration}}" indicatorDots='{{indicatorDots}}' indicator-active-color='#000'>
+    <block>
+      <swiper-item>
+        <image src="../../images/detail.jpg"></image>
+      </swiper-item>
+      <swiper-item>
+        <image src="../../images/2.jpg"></image>
+      </swiper-item>
+      <swiper-item>
+        <image src="../../images/detail.jpg"></image>
+      </swiper-item>
+      <swiper-item>
+        <image src="../../images/4.jpg"></image>
+      </swiper-item>
+    </block>
+  </swiper>
+  <text class="goodsname">innisfree/悦诗风吟旗舰店 真萃鲜润面膜贴套装18片 补水保湿亮白</text>
+  <view class="goodsprice">商城价：
+    <text>￥120 </text>元 —
+    <text>￥150</text> 元</view>
+  <view class="kssel">
+    请选择：
+    <text>下列规格</text>
+    <view class="ys">
+      <text>颜色</text>
+      <!-- <view bindtap='colorSel' data-index='1'>黑色</view>
+      <view bindtap='colorSel' data-index='2'>白色</view> -->
+      <view wx:for="{{arr}}" wx:key="arr" bindtap='colorSel' data-index='{{index}}' style="{{index == _index ? 'color:red':'color:blue'}}">{{item.name}}</view>
+      <text>尺寸</text>
+      <view>85D</view>
+      <view>xxl</view>
+    </view>
+
+  </view>
+</view>
+<view class="gray"></view>
+<view class="see" bindtap='seeDetail'>
+  <image src="../../images/see.png" class="see_icon"></image>
+  <text>查看商品评论</text>
+  <text class="hh">货号：20151124007</text>
+  <image src="../../images/arrow.png" class="arrow"></image>
+</view>
+<view class="gray"></view>
+
+<view class="goodsatt">
+  <view class="goodstab">
+    <view class="goodssel {{sptype==1 ? 'on':''}}" data-tp="1" bindtap='tapfn'>商品介绍</view>
+    <view class="goodssel {{sptype==2 ? 'on':''}}" data-tp="2" bindtap='tapfn'>商品属性</view>
+  </view>
+  <view wx:if="{{sptype==1}}" class="goodsinfo">
+    <image src="../../images/good.png"></image>
+  </view>
+  <view wx:else class="goodsinfo">
+    <view class="sx_item">
+      <view class="sxname">计价单位:</view>
+      <view class="sx_detail">奥</view>
+    </view>
+    <view class="sx_item">
+      <view class="sxname">计价单位:</view>
+      <view class="sx_detail"></view>
+    </view>
+    <view class="sx_item">
+      <view class="sxname">计价单位:</view>
+      <view class="sx_detail"></view>
+    </view>
+    <view class="sx_item">
+      <view class="sxname">计价单位:</view>
+      <view class="sx_detail"></view>
+    </view>
+    <view class="sx_item">
+      <view class="sxname">计价单位:</view>
+      <view class="sx_detail"></view>
+    </view>
+  </view>
+</view>
+
+<view class="foot">
+  <view class="sc">
+    <image src="../../images/heart.png"></image>
+  </view>
+  <view class="gm" bindtap="buyGoods">立即购买</view>
+  <view class="jias">
+    <image src="../../images/jias.png"></image>
+  </view>
+</view>

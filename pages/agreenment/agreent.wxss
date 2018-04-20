@@ -1,0 +1,3 @@
+/* pages/agreenment/agreent.wxss */
+view{font-size: 24rpx;padding: 10rpx 20rpx;box-sizing: border-box;}
+view text{font-weight: bold;}

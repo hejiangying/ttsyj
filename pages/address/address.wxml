@@ -1,0 +1,30 @@
+<!--pages/address/address.wxml-->
+<view class="address">
+  <view class="newadd" bindtap='newAdd'>新建地址</view>
+</view>
+<view class="creatadd {{type==true?'show':'false'}} " >
+  <view>  
+  <text>收货人：</text>
+  <input>111</input>
+  </view>
+  <view>  
+  <text>手机号码：</text>
+  <input maxlength='11'>111</input>
+  </view>
+  <view>  
+  <text>所在地区：</text>
+  <input>111</input>
+  </view>
+  <view>  
+  <text>详细地址：</text>
+  <input>111</input>
+  </view>
+  <view>  
+  <text>设为默认地址：</text>
+  <switch checked color='#ff6700'></switch>
+  </view>
+
+  <view class="save">
+  保存修改
+  </view>
+</view>

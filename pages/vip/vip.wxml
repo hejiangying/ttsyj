@@ -1,0 +1,78 @@
+<!--pages/vip/vip.wxml-->
+<!-- 新用户 -->
+<view class="new" wx:if="{{data.member_id==-1}}">
+<view>
+  <view class="cen">
+    <view class="tab"> <text class="on">手机登录</text></view>
+    <view class="tab"> <text>普通登录</text></view> 
+  </view>
+  <view class="sub">
+  <view class="sub_con">
+  <view class="sub_item phonenum">
+    <image src="../../images/iphone.png"></image>
+    <input placeholder='请输入11位手机号'></input>
+  </view>
+  <view class="sub_item yzm">
+    <image src="../../images/yzm.png"></image>
+    <input placeholder='请输入验证码'></input>
+    <text>获取手机验证码</text>
+  </view>
+  </view>
+  </view>
+</view>
+
+<view class="info">
+  <view class="contain">
+    <text>
+        温馨提示: 未注册本站的手机号码，登录时将自动注册。且代表您已同意</text><text class="yh" bindtap='goinfo'>《用户服务协议》</text>
+    <button class="log" value='立即登陆'>立即登陆</button>  
+    <button class="findmm" value='找回密码'>找回密码</button> 
+
+    <view class="dsf">
+      <view class="h"></view><text>用合作网站账号登录</text>
+    </view>
+    <view class="share">
+      <view class="qq"><image src="../../images/qq.png"></image> </view>
+      <view class="wb"><image src="../../images/wb.png"></image></view>
+      <view class="wx"><image src="../../images/wx.png"></image></view>
+    </view>
+  </view>
+</view>
+</view>
+<!-- 已登录 -->
+<view class="old" wx:elif="{{data.member_id==-1}}">
+<view class="myvip" >
+  <text>hejy</text>
+  <image src='../../images/ren.png'></image>
+</view>
+
+<view class="progress">
+  <view class="pro_item">
+    <image src="../../images/ding.png"></image>
+    <text>全部订单</text>
+  </view>
+  <view class="pro_item">
+    <image src="../../images/dfk.png"></image>
+    <text>待付款</text>
+  </view>
+  <view class="pro_item">
+    <image src="../../images/dsh.png"></image>
+    <text>待收货</text>
+  </view>
+</view>
+<view class="gray"></view>
+<view class="list">
+  <view class="list_item" bindtap='myColle'>我的收藏 <image src="../../images/arrow.png"></image></view>
+  <view class="list_item" bindtap='myAdd'>我的地址 <image src="../../images/arrow.png"></image></view>
+  <view class="list_item" bindtap='myCou'>我的优惠券 <image src="../../images/arrow.png"></image></view>
+  <view class="list_item" bindtap='myEval'>我的评价 <image src="../../images/arrow.png"></image></view>
+  <view class="list_item" bindtap='myInfo'>我的信息 <image src="../../images/arrow.png"></image></view>
+  <view class="list_item"  bindtap='mySafe'>账户安全 <image src="../../images/arrow.png"></image></view>
+  <view class="list_item">售后列表 <image src="../../images/arrow.png"></image></view>
+
+</view>
+<view class="exit">
+  <button>注销/退出</button>
+</view>
+
+</view>

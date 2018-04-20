@@ -1,0 +1,16 @@
+<!--pages/comments/comments.wxml--> 
+<view class="comments">
+  <view class="comtab goodscomm {{curgoods==1 ? 'on':''}}" data-goods="1" bindtap='selGoods'>商品评论</view>
+  <view class="comtab goodsadvisory {{curgoods==2 ? 'on':''}}" data-goods="2" bindtap='selGoods'>商品资讯</view>
+  <view class="xian"></view>
+</view>
+<view class="goodscom" wx:if="{{curgoods==1}}">
+  <view class="all {{}} ">全部（0）</view>
+  <view class="goodcom">好评（0）</view>
+  <view class="midcom">中评（0）</view>
+  <view class="badcom">差评（0）</view>
+</view>
+<view class="goodsadv" wx:else>
+<textarea placeholder='请在此处输入您的问题' auto-height="true" maxlength='0'></textarea>
+<input type="submit" value="提交咨询"></input>
+</view>

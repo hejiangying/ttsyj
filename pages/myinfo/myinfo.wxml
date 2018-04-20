@@ -1,0 +1,20 @@
+<!--pages/myinfo/myinfo.wxml-->
+<view class="myinfo">
+  <view class="ever">
+  <view>真实姓名：</view>
+  <input></input>
+  </view>
+  <view class="ever">
+  <view>性别：</view>
+  <input></input>
+  </view>
+  <view class="ever">
+  <view>居住地：</view>
+  <input></input>
+  </view>
+  <view class="ever">
+  <view>详细地址：</view>
+  <input></input>
+  </view>
+  <view class="save">保存资料</view>
+</view>

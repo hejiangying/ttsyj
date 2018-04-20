@@ -1,0 +1,13 @@
+/* pages/mycoupons/mycoupons.wxss */
+.yhq_tab{margin: 0 auto;width: 100%;border-bottom: 1rpx solid #f2f2f2;}
+.yhq_tab view{display: inline-block;font-size: 28rpx;width: 49%;text-align: center;border-right: 1rpx solid #e3e3e3;padding: 10rpx 0rpx;}
+.yhq_tab view:last-child{border-right: none;}
+.yhq{font-size: 28rpx;}
+.yhqdetail{width: 90%;margin: 0 auto;background: -webkit-linear-gradient(right,#ff6700,#f8a27e);color: #fff;box-sizing: border-box;padding: 20rpx 40rpx;margin-top: 30rpx;}
+.yhqdetail text{display: block}
+.yhq_l, .yhq_r{display: inline-block;}
+.yhq_l{width: 60%;}
+.yhq_r{width: 40%;}
+.yhq_l .yhq_name{font-size: 20rpx;}
+.yhq_l .yhq_num{font-size: 56rpx;}
+.yhq_r .yhq_lname{font-size: 48rpx;}

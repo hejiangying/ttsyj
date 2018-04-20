@@ -1,0 +1,34 @@
+/* pages/goodsdetail/goodsdetail.wxss */
+swiper{height: 700rpx;}
+swiper-item{height: 700rpx;}
+swiper-item image{width: 100%;height: 700rpx;}
+.goodsname{font-size: 28rpx;width: 90%;display: block;margin: 0 auto;}
+.goodsprice{width: 90%;margin: 0 auto;margin-top: 15rpx;font-size: 28rpx;color: #FF5722;margin-bottom: 20rpx;}
+.goodsprice text{font-size: 36rpx;}
+.gray{width: 100%;height: 20rpx;background: #ccc;}
+.see{width: 90%;margin: 0 auto;padding: 10rpx 0rpx;}
+.see .see_icon{width: 36rpx;height: 36rpx;display: inline-block;vertical-align: -5rpx;}
+.see text{font-size: 24rpx;margin-left: 20rpx;}
+.see text.hh{color: #B4B4B4;margin-left: 160rpx;}
+.see .arrow{width: 24rpx;height: 28rpx;display: inline-block;margin-top: 12rpx; float: right}
+.goodstab{width: 90%;margin: 0 auto;}
+.goodstab .goodssel{font-size: 28rpx;display: inline-block;width: 49%;text-align: center;border-right: 1rpx solid #e5e5e5;margin: 26rpx 0rpx;}
+.goodstab .goodssel:last-child{border-right: none;}
+.goodstab .on{color: #FF5722;}
+.goodsinfo{width: 90%;margin: 0 auto;}
+.goodsinfo image{width: 100%;}
+.on{color:#ff5722;}
+.goodsinfo .sx_item{border-top: 1rpx solid #f6f6f6;overflow: hidden;padding: 20rpx 0rpx;}
+.goodsinfo .sx_item .sxname{font-size: 24rpx;width: 30%;float:left;text-align: right;margin-right: 3%}
+.goodsinfo .sx_item .sx_detail{width: 67%;font-size: 24rpx;float: left}
+.kssel{font-size: 24rpx;width: 90%;margin: 0 auto;color: #999;border-top: 1rpx solid #f6f6f6;padding: 30rpx 0rpx 60rpx;margin-top: 40rpx;}
+.kssel>text{color: #FF5722}
+.kssel view text{color: #000;display: block;margin: 16rpx 0rpx;}
+.kssel .ys>view{padding: 5rpx 20rpx;border: 1rpx solid  #f6f6f6;display: inline-block;margin-right: 20rpx;}
+.foot{position: fixed;z-index: 20;background: #fff; bottom: 0rpx;height: 100rpx;width: 100%;border-top: 1rpx solid #f6f6f6;border-bottom: 1rpx solid #f6f6f6}
+.foot .sc{display: inline-block}
+.foot .sc image{width: 60rpx ;height: 60rpx;margin-left: 20rpx;margin-top: 20rpx;}
+.foot .gm{background: #ff5722;width: 70%;display: inline-block;font-size: 28rpx;color: #fff;text-align: center;vertical-align: 22rpx;margin: 0rpx 20rpx;padding: 12rpx 0rpx;}
+.foot .jias{display: inline-block;}
+.foot .jias image{width: 60rpx;height: 60rpx;float: right;}
+

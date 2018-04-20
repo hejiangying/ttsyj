@@ -1,0 +1,21 @@
+/* pages/but_goumai/but_goumai.wxss */
+.but_g{width: 100%;}
+.but_g .goodsnum{border-bottom: 1rpx solid #f6f6f6;padding: 0rpx 20rpx;box-sizing: border-box;}
+.goodsnum image{width: 194rpx;height: 188rpx;display: inline-block;margin-right: 20rpx;}
+.goodsinfo{width: 434rpx;display: inline-block;vertical-align: top}
+.goodsinfo text{font-size: 28rpx; display: inline-block}
+.goodsinfo text.yhj{display: block;font-size: 24rpx;color: #bbb;margin: 12rpx 0rpx;}
+.goodsinfo .num{border: 1rpx solid #f6f6f6;width: 250rpx;background: #fafafa;}
+.goodsinfo .num text{width: 50rpx;height: 50rpx;background: #fafafa;text-align: center;line-height: 50rpx;vertical-align: top}
+.goodsinfo input{display: inline-block;font-size: 28rpx;width: 150rpx;height: 48rpx;vertical-align: bottom;text-align: center;outline: none;border: none;background: #fff;}
+.operation{width: 60rpx;display: inline-block;vertical-align: top;}
+.operation .dele{margin-bottom: 70rpx;}
+.operation image{width: 40rpx;height: 40rpx;vertical-align: top;margin-top: 10rpx;}
+.foot{position: fixed;width: 100%;background: white;bottom: 0;}
+.foot view{width: 33.33%;display: inline-block;height: 80rpx;text-align: center;font-size: 28rpx;border-top: 1rpx solid #f6f6f6;line-height: 80rpx;}
+.foot view:nth-child(1){line-height: 0rpx;position: relative;height: 50rpx;}
+.foot view:nth-child(1) text{display: block;font-size: 24rpx;height: 40rpx;}
+.foot view:nth-child(1) text:nth-child(1){position: absolute;left: 0;right: 0;top: 25rpx ;margin: 0 auto;}
+.foot view:nth-child(1) text:nth-child(2){position: absolute;left: 0;right: 0;top: 60rpx; margin: 0 auto;color: #ff5722}
+.foot view:nth-child(2){background: #f4f4f4;}
+.foot view:nth-child(3){background: #ff5722;color: white;}

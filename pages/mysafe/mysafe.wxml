@@ -1,0 +1,16 @@
+<!--pages/mysafe/mysafe.wxml-->
+<view class="mysafe">
+  <view class="ever">
+  <view>您的手机号：</view>
+  <input></input>
+  </view>
+  <view class="ever">
+  <view>短信验证码：</view>
+  <input></input>
+  </view>
+  <view class="ever">
+  <view>图片验证码：</view>
+  <input></input>
+  </view>
+  <view class="save">保存资料</view>
+</view>

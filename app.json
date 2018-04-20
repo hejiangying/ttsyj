@@ -1,0 +1,60 @@
+{
+  "pages": [
+    "pages/main/main",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/shopping/shopping",
+    "pages/agreenment/agreent",
+    "pages/goodsdetail/goodsdetail",
+    "pages/sort/sort",
+    "pages/vip/vip",
+    "pages/login/login",
+    "pages/search/search",
+    "pages/goodsdiff/goodsdiff",
+    "pages/comments/comments",
+    "pages/mycollection/mycollection",
+    "pages/address/address",
+    "pages/but_goumai/but_goumai",
+    "pages/mycoupons/mycoupons",
+    "pages/myeval/myeval",
+    "pages/myinfo/myinfo",
+    "pages/mysafe/mysafe"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "云彩帮shop",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "borderStyle": "black",
+    "backgroundColor": "#fff",
+    "box-shadow": "0px 2px 20px #000",
+    "list": [
+      {
+        "pagePath": "pages/main/main",
+        "iconPath": "images/home.png",
+        "selectedIconPath": "images/home.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/sort/sort",
+        "iconPath": "images/sort.png",
+        "selectedIconPath": "images/sort.png",
+        "text": "分类"
+      },
+      {
+        "pagePath": "pages/but_goumai/but_goumai",
+        "iconPath": "images/shopping.png",
+        "selectedIconPath": "images/shopping.png",
+        "text": "购物车"
+      },
+      {
+        "pagePath": "pages/vip/vip",
+        "iconPath": "images/personal.png",
+        "selectedIconPath": "images/personal.png",
+        "text": "会员"
+      }
+    ]
+  }
+}

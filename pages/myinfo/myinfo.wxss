@@ -1,0 +1,6 @@
+/* pages/myinfo/myinfo.wxss */
+.myinfo{width: 90%;margin: 0 auto;font-size: 28rpx;}
+.myinfo .ever{border-bottom: 3rpx solid #ddd;padding: 15rpx 0rpx;}
+.save{width: 80%;margin: 0 auto;background: #ff6700;padding: 15rpx 0rpx;border-radius: 20rpx;margin-top: 30rpx;color: #fff;text-align: center;}
+.myinfo .ever view{display: inline-block}
+.myinfo .ever input{width: 60%;display: inline-block;vertical-align: bottom}

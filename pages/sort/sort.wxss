@@ -1,0 +1,12 @@
+/* pages/sort/sort.wxss */
+.sort_con{background: #e2e2e2;overflow: hidden;padding-bottom: 50rpx;}
+.sort_menu{width: 24%;border-right: 1rpx solid #ccc;background: #fff;float: left}
+.sort_menu view:first-child{border-top: 1rpx solid #ccc;}
+.sort_menu view{font-size: 28rpx;text-align: center;padding: 20rpx;border-bottom: 1rpx solid #ccc;}
+.sort_menu view.on{color: #ff6b07;} 
+.sort_right{margin-left: 20rpx;float: left;width: 72%;}
+.sort_right .sort_item text{font-size: 36rpx;margin: 15rpx 0rpx;display: block}
+.sort_eve{background: #fff;overflow: hidden;}
+.sort_eve .dbt{width: 160rpx;float: left;margin-left:16rpx;margin-top: 20rpx;}
+.sort_eve .dbt text{text-align: center;display: block;font-size: 28rpx;}
+.sort_eve .dbt image{max-width: 160rpx;max-height: 180rpx;}
