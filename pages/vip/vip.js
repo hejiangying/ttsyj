@@ -1,12 +1,15 @@
 // pages/vip/vip.js
 var until = require("../../utils/util.js");
+var phonenum = '';
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-  
+    index:1,
+    time:"获取手机验证码"
+    
   },
 
   /**
@@ -15,7 +18,7 @@ Page({
   onLoad: function (options) {
     var that = this;
     until.reqGet("https://m.yuncaibang.com/api/shop/member/is-login-wechat.do", function (res)     {
-      console.log("登录：",res);
+      console.log("登录：", res.data.member_id);
      
       that.setData({
         data: res
@@ -31,7 +34,7 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-  
+    phonenum = "";
   },
 
   /**
@@ -72,7 +75,31 @@ Page({
       url: '../myinfo/myinfo',
     })
   },
+  logClick:function(e){
+    var that = this;
+    var _index = e.currentTarget.dataset.id;
+    that.setData({
+      index: _index
+    });
+  },
+  // sendMessg:function(e){
+  //   var that = this;
+  //   console.log(e.detail.value)
+  //   phonenum = e.detail.value
+  //   that.setData({
+  //     phonenum:phonenum
+  //   })
+   
+  // },
+  getMeg: function () {
+    var that = this;
+    console.log(555)
+    until.reqGet("https://m.yuncaibang.com/api/shop/sms/send-sms-code.do?key=check&mobile=13667670120", function (res) {
 
+      console.log(res)
+
+     })
+  },
   /**
    * 生命周期函数--监听页面卸载
    */

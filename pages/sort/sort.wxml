@@ -1,18 +1,11 @@
 <!--pages/sort/sort.wxml-->
 <view class="sort_con">
-<view class="sort_menu">
-  <view class="on">食品饮料</view>
-  <view>食品饮料</view>
-  <view>食品饮料</view>
-  <view>食品饮料</view>
-  <view>食品饮料</view>
-  <view>食品饮料</view>
-  <view>食品饮料</view>
-
+<view class="sort_menu" >
+  <view wx:for='{{list}}' wx:key="{{index}}">{{item.name}}</view>
 </view>
 <view class="sort_right">
     <view class="sort_item">
-      <text>休闲零食</text>
+      <text>{{item.children[0].name}}</text>
       <view class="sort_eve">
         <view class="dbt">
           <image src="../../images/dbt.png"></image>

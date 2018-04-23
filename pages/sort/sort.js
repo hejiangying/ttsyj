@@ -1,18 +1,32 @@
 // pages/sort/sort.js
+var until = require("../../utils/util.js");
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-  
+    list:'',
+    listname:''
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+    var that = this;
+    until.reqGet("https://m.yuncaibang.com/api/shop/goods/getGoodsCatList.do?catId=0", function (res) {
+      console.log("res:",res)
+      that.setData({
+        list:res.data,
+        listname:res.data[0].children
+      })
+      console.log(that.data.listname)
+    })
+
+  },
+  getItem:function(){
+   
   },
 
   /**

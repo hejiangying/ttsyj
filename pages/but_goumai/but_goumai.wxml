@@ -1,4 +1,5 @@
 <!--pages/but_goumai/but_goumai.wxml-->
+<view class='page-con'>
 <view class="but_g">
   <view class="goodsnum">
     <image src="../../images/goods.jpg"></image>
@@ -48,6 +49,7 @@
       <image src="../../images/delete.png"></image>
     </view>
   </view>
+</view>
 </view>
 <view class="foot">
   <view>
