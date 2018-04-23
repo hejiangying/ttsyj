@@ -1,52 +1,73 @@
 <!--pages/goodsdetail/goodsdetail.wxml-->
 
 <import src="../../wxParse/wxParse.wxml" />
-<view>
-  <swiper autoplay='{{autoplay}}' interval='{{interval}}' duration="{{duration}}" indicatorDots='{{indicatorDots}}' indicator-active-color='#000'>
-<block>
-  <swiper-item>
-    <image src="{{list.big}}"></image>
-  </swiper-item>
-  <swiper-item>
-   <image src="../../images/2.jpg"></image>
-  </swiper-item>
-  <swiper-item>
-    <image src="../../images/detail.jpg"></image>
-  </swiper-item>
-  <swiper-item>
-     <image src="../../images/4.jpg"></image>
-  </swiper-item>
-  </block>
-</swiper>
-<text class="goodsname">{{list.name}}</text>
-<view class="goodsprice">商城价：<text>￥{{list.price}} 元</text> </view>
-</view>
-<view class="gray"></view>
-<view class="see" bindtap='seeDetail'>
-  <image src="../../images/see.png" class="see_icon"></image>
-  <text>查看商品评论</text>
-  <text class="hh">货号：{{list.sn}}</text>
-  <image src="../../images/arrow.png" class="arrow"></image>
-</view>
-<view class="gray"></view>
+<view class='page-con'>
+  <view>
+    <swiper autoplay='{{autoplay}}' interval='{{interval}}' duration="{{duration}}" indicatorDots='{{indicatorDots}}' indicator-active-color='#000'>
+      <block>
+        <swiper-item>
+          <image src="{{list.big}}"></image>
+        </swiper-item>
+        <swiper-item>
+          <image src="../../images/2.jpg"></image>
+        </swiper-item>
+        <swiper-item>
+          <image src="../../images/detail.jpg"></image>
+        </swiper-item>
+        <swiper-item>
+          <image src="../../images/4.jpg"></image>
+        </swiper-item>
+      </block>
+    </swiper>
+    <text class="goodsname">{{list.name}}</text>
+    <view class="goodsprice">商城价：
+      <text>￥{{list.price}} 元</text> </view>
+  </view>
+  <view class="gray"></view>
+  <view class="see" bindtap='seeDetail'>
+    <image src="../../images/see.png" class="see_icon"></image>
+    <text>查看商品评论</text>
+    <text class="hh">货号：{{list.sn}}</text>
+    <image src="../../images/arrow.png" class="arrow"></image>
+  </view>
+  <view class="gray"></view>
 
-<view class="goodsatt">
-  <view class="goodstab">
-   <view class="goodssel {{sptype==1 ? 'on':''}}" data-tp="1" bindtap='tapfn'>商品介绍</view>
-   <view class="goodssel {{sptype==2 ? 'on':''}}" data-tp="2" bindtap='tapfn'>商品属性</view>
-   </view>
-   <view wx:if="{{sptype==1}}" class="goodsinfo">
-    <!-- <image src="../../images/good.png"></image> -->
-    <template is="wxParse" data="{{wxParseData:article.nodes}}" />
-   </view>
-   <view wx:else class="goodsinfo">
-      <view class="sx_item"><view class="sxname">计价单位:</view><view class="sx_detail">{{list.p3}}</view>  </view>
-      <view class="sx_item"><view class="sxname">品牌:</view><view class="sx_detail">{{list.name}}</view> </view>
-      <view class="sx_item"><view class="sxname">产地:</view> <view class="sx_detail"></view> </view>
-       <view class="sx_item"><view class="sxname">包装:</view> <view class="sx_detail"></view> </view>
-        <view class="sx_item"><view class="sxname">规格:</view> <view class="sx_detail"></view> </view>
-        <view class="sx_item"><view class="sxname">重量:</view> <view class="sx_detail"></view> </view>
-   </view>
+  <view class="goodsatt">
+    <view class="goodstab">
+      <view class="goodssel {{sptype==1 ? 'on':''}}" data-tp="1" bindtap='tapfn'>商品介绍</view>
+      <view class="goodssel {{sptype==2 ? 'on':''}}" data-tp="2" bindtap='tapfn'>商品属性</view>
+    </view>
+    <view wx:if="{{sptype==1}}" class="goodsinfo">
+      <!-- <image src="../../images/good.png"></image> -->
+      <template is="wxParse" data="{{wxParseData:article.nodes}}" />
+    </view>
+    <view wx:else class="goodsinfo">
+      <view class="sx_item">
+        <view class="sxname">计价单位:</view>
+        <view class="sx_detail">{{list.p3}}</view>
+      </view>
+      <view class="sx_item">
+        <view class="sxname">品牌:</view>
+        <view class="sx_detail">{{list.name}}</view>
+      </view>
+      <view class="sx_item">
+        <view class="sxname">产地:</view>
+        <view class="sx_detail"></view>
+      </view>
+      <view class="sx_item">
+        <view class="sxname">包装:</view>
+        <view class="sx_detail"></view>
+      </view>
+      <view class="sx_item">
+        <view class="sxname">规格:</view>
+        <view class="sx_detail"></view>
+      </view>
+      <view class="sx_item">
+        <view class="sxname">重量:</view>
+        <view class="sx_detail"></view>
+      </view>
+    </view>
+  </view>
 </view>
 <view class="foot">
   <view class="sc">

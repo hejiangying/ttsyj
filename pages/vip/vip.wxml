@@ -1,25 +1,57 @@
 <!--pages/vip/vip.wxml-->
 <!-- 新用户 -->
-<view class="new" wx:if="{{data.member_id==-1}}">
+<view class="new" wx:if="{{data.data.member_id==-1}}">
 <view>
   <view class="cen">
-    <view class="tab"> <text class="on">手机登录</text></view>
-    <view class="tab"> <text>普通登录</text></view> 
+    <view class="tab"> <text class="{{index==1 ? 'on':''}}" data-id="1" bindtap='logClick'>手机登录</text></view>
+    <view class="tab"> <text class="{{index==2 ? 'on':''}}" data-id="2" bindtap='logClick'>普通登录</text></view> 
   </view>
   <view class="sub">
-  <view class="sub_con">
-  <view class="sub_item phonenum">
-    <image src="../../images/iphone.png"></image>
-    <input placeholder='请输入11位手机号'></input>
+  <!-- 手机登录 -->
+  <view class="sub_con" wx:if="{{index==1}}">
+    <view class="sub_item phonenum">
+      <image src="../../images/iphone.png"></image>
+      <input placeholder='请输入11位手机号' id="phone" bindinput='sendMessg'></input>
+    </view>
+    <view class="sub_item yzm">
+      <image src="../../images/yzm.png"></image>
+      <input placeholder='请输入验证码'></input>
+      <text bindtap="getMeg">{{time}}</text>
+    </view>
   </view>
-  <view class="sub_item yzm">
-    <image src="../../images/yzm.png"></image>
-    <input placeholder='请输入验证码'></input>
-    <text>获取手机验证码</text>
+  <!-- 普通登录 -->
+  <view class="sub_con" wx:else>
+     <view class="sub_item phonenum">
+      <image src="../../images/iphone.png"></image>
+      <input placeholder='请输入邮箱/用户名/手机号'></input>
+    </view>
+     <view class="sub_item phonenum">
+      <image src="../../images/yzm.png"></image>
+      <input placeholder='请输入密码'></input>
+    </view>
+     <view class="sub_item yzm">
+      <image src="../../images/yzm.png"></image>
+      <input placeholder='请输入图片验证码'></input>
+      <image src="../../images/tpyzm.png" class="tp"></image>
+    </view>
   </view>
   </view>
+  <!-- 完善信息弹出框 -->
+  <view class="wsinfo">
+   <view class="infocon">
+    <text class="name">完善信息</text>
+    <view><text>手机号：</text><input>17609666666</input> </view>
+    <view><text>用户名：</text><input placeholder='请输入用户名'></input> </view>
+    <view><text>密码：</text><input type="password" placeholder='请牢记您的密码'></input> </view>
+    <view class="btn"><text class="btn_c">取消</text><text class="btn_s">确认</text> </view>
+   </view>
   </view>
+
+
 </view>
+
+
+
 
 <view class="info">
   <view class="contain">
@@ -28,19 +60,19 @@
     <button class="log" value='立即登陆'>立即登陆</button>  
     <button class="findmm" value='找回密码'>找回密码</button> 
 
-    <view class="dsf">
+    <!-- <view class="dsf">
       <view class="h"></view><text>用合作网站账号登录</text>
     </view>
     <view class="share">
       <view class="qq"><image src="../../images/qq.png"></image> </view>
       <view class="wb"><image src="../../images/wb.png"></image></view>
       <view class="wx"><image src="../../images/wx.png"></image></view>
-    </view>
+    </view> -->
   </view>
 </view>
 </view>
 <!-- 已登录 -->
-<view class="old" wx:elif="{{data.member_id==-1}}">
+<view class="old" wx:elif="{{data.data.member_id==0}}">
 <view class="myvip" >
   <text>hejy</text>
   <image src='../../images/ren.png'></image>
