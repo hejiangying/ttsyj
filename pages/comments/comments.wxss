@@ -9,4 +9,4 @@
 .on{color: #ff5722;}
 .selon{border-bottom: 1rpx solid #ff5722;}
 .goodsadv textarea{width: 80%; border: 1rpx solid #a9a9a9;margin: 20rpx auto;font-size: 28rpx;display: block;padding: 15rpx;}
-.goodsadv input{width: 70%;background: #ff5722;height: 48rpx;color: #fff;text-align: center;margin: 0 auto;margin-top: 20rpx;border-radius: 10rpx;font-size: 24rpx;display: block}
+.goodsadv button{width: 70%;background: #ff5722;padding: 7.5rpx;color: #fff;text-align: center;margin: 0 auto;margin-top: 20rpx;border-radius: 10rpx;font-size: 24rpx;display: block}
