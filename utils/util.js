@@ -1,3 +1,4 @@
+var config = require("./config").config;
 const formatTime = date => {
   const year = date.getFullYear()
   const month = date.getMonth() + 1
@@ -29,8 +30,26 @@ var reqGet = function(url,fn){
     }
   })
 }
+var request = function (url, parm, fn) {
+  wx.request({
+    url: config.host + url,
+    data: parm,
+    header: {
+      'content-type': 'application/json'
+    },
+    success: function (res) {
+      // console.log(res);
+      fn(res);
+    },
+    fail: function (err) {
+      console.log(err);
+    }
+  })
+}
+
 
 module.exports = {
   formatTime: formatTime,
-  reqGet: reqGet
+  reqGet: reqGet,
+  request: request
 }

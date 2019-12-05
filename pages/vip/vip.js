@@ -1,130 +1,92 @@
 // pages/vip/vip.js
 var until = require("../../utils/util.js");
-var phonenum = '';
 Page({
-
   /**
    * 页面的初始数据
    */
   data: {
-    index:1,
-    time:"获取手机验证码"
-    
+    // index: 1,
+    sendmsg: "",
+    getmsg: "获取短信验证码",
+    phonefocus: false,
+    phonenum: '',
+    validcode: ''
   },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
   onLoad: function (options) {
     var that = this;
-    until.reqGet("https://m.yuncaibang.com/api/shop/member/is-login-wechat.do", function (res)     {
+    until.reqGet("https://m.yuncaibang.com/api/shop/member/is-login-wechat.do", function (res) {
       console.log("登录：", res.data.member_id);
-     
       that.setData({
         data: res
       })
     });
   },
-  myColle:function(){
-    wx:wx.navigateTo({
-    url: '../mycollection/mycollection',
-  })
-  },
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-    phonenum = "";
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-  
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-  
-  },
-  myAdd:function(){
-    wx:wx.navigateTo({
-      url: '../address/address',
-    })
-  },
-  myCou:function(){
-    wx: wx.navigateTo({
-      url: '../mycoupons/mycoupons',
-    })
-  },
-  mySafe: function () {
-    wx: wx.navigateTo({
-      url: '../mysafe/mysafe',
-    })
-  },
-  myEval:function(){
-    wx: wx.navigateTo({
-      url: '../myeval/myeval',
-    })
-  },
-  myInfo: function () {
-    wx: wx.navigateTo({
-      url: '../myinfo/myinfo',
-    })
-  },
-  logClick:function(e){
+  sendmessg: function (e) {
     var that = this;
-    var _index = e.currentTarget.dataset.id;
-    that.setData({
-      index: _index
-    });
+    if (that.data.phonenum == "") {
+      wx.showModal({
+        title: '温馨提示', content: "请输入手机号", showCancel: false, success: function (res) {
+          if (res.confirm) {
+            that.setData({ phonefocus: true });
+          }
+        }
+      });
+      return false;
+      if (!(/^1[3|4|5|8][0-9]\d{4,8}$/.test(that.data.phonenum))) {
+        wx.showModal({ title: '温馨提示', content: "请输入正确的手机号", showCancel: false });
+        return false;
+      }
+      var time = 60;
+      var inter = setInterval(function () {
+        that.setData({ sendmsg: "sendmsgafter", getmsg: time + "s后重新发送" });
+        time--;
+        if (time < 0) {
+          clearInterval(inter);
+          that.setData({ sendmsg: "", getmsg: "获取短信验证码", });
+        }
+      }, 1000);
+    }
   },
-  // sendMessg:function(e){
-  //   var that = this;
-  //   console.log(e.detail.value)
-  //   phonenum = e.detail.value
-  //   that.setData({
-  //     phonenum:phonenum
-  //   })
-   
-  // },
   getMeg: function () {
     var that = this;
-    console.log(555)
-    until.reqGet("https://m.yuncaibang.com/api/shop/sms/send-sms-code.do?key=check&mobile=13667670120", function (res) {
-
+    console.log(that.data.phonenum)
+    until.reqGet("https://m.yuncaibang.com/api/shop/sms/send-sms-code.do?key=check&mobile=" + that.data.phonenum, function (res) {
       console.log(res)
-
-     })
+    })
   },
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-  
+  //获取用户输入的用户名
+  phoneInput: function (e) {
+    this.setData({
+      phonenum: e.detail.value
+    })
   },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-  
+  validCodeInput: function (e) {
+    this.setData({
+      validcode: e.detail.value
+    })
   },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-  
+  login: function () {
+    var that = this;
+    console.log(that.data.phonenum);
+    console.log(that.data.validcode);
+    var parm = {
+      mobile: that.data.phonenum,
+      validcode: that.data.validcode
+    }
+    until.request("/b2c/api/shop/member/sms-login.do", parm, function (res) {
+      console.log(res);
+    });
   },
+  // logClick: function (e) {
+  //   var that = this;
+  //   var _index = e.currentTarget.dataset.id;
+  //   that.setData({
+  //     index: _index
+  //   });
+  // },
+  // sendMessg: function (e) {
+  //   var that = this;
+  //   phonenum = e.detail.value;
 
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-  
-  }
+  // }
 })
